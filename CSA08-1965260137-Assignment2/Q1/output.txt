@@ -1,0 +1,23 @@
+units ration   80+ | predicted  if-elif    separate-if      boolean    table      match     
+    0  False False | FULL       FULL       FULL             FULL       FULL       FULL      
+  100   True False | FULL       FULL       FULL+PARTIAL     FULL       FULL       FULL      
+  101   True False | PARTIAL    PARTIAL    PARTIAL          PARTIAL    PARTIAL    PARTIAL   
+  101  False False | NONE       NONE       NONE             NONE       NONE       NONE      
+  200   True False | PARTIAL    PARTIAL    PARTIAL          PARTIAL    PARTIAL    PARTIAL   
+  200  False  True | NONE       NONE       NONE             NONE       NONE       NONE      
+  201  False  True | FULL(80+)  FULL(80+)  FULL(80+)        FULL(80+)  FULL(80+)  FULL(80+) 
+  201   True False | NONE       NONE       NONE             NONE       NONE       NONE      
+
+mismatches among correct versions over 1604 inputs: 0
+inputs with more than one result (separate ifs): 202
+
+Time per decision (microseconds), 200000 calls, worst-case last slab:
+  if-elif    : 0.106 us
+  table-loop : 0.311 us
+  match-case : 0.150 us
+
+Slab-table lookup vs k (worst case = last slab), 100000 lookups:
+  k=3     0.416 us per decision
+  k=10    1.039 us per decision
+  k=100   6.693 us per decision
+  k=1000  74.350 us per decision
