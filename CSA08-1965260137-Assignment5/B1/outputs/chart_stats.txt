@@ -1,0 +1,5 @@
+Chart1 Adyar daily mean: min 50.2 (day 25), max 73.7 (day 21), days above 60: 20 of 31
+Chart2 highest Ennore 113.5; lowest Sholinganallur 56.2; ratio 2.02x
+Chart4 Pearson r(temp, PM2.5) = -0.110
+Chart5 worst hours: [20, 21, 19, 8]; best hour 14 (72.7)
+Chart6 mean 82.2, median 79.9, skew 0.40

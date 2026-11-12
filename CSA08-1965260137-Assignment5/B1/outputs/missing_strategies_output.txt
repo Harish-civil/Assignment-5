@@ -1,0 +1,7 @@
+1,000,000 values, 49,772 missing (about 5%)
+strategy       time s       kept     mean
+drop            0.018    950,228   83.442
+forward fill    0.048  1,000,000   83.439
+median fill     0.188  1,000,000   83.445
+
+Biased-gap example (rush hours missing): true mean 76.2 | drop 60.0 | forward fill 60.0

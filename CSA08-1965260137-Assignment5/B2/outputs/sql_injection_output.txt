@@ -1,0 +1,23 @@
+
+Input: 'Adyar'
+   SQL sent: SELECT AVG(pm25) FROM aq WHERE station = 'Adyar'
+  concatenation -> 48.0
+  ? placeholder -> 48.0
+
+Input: "O'Brien Road"
+   SQL sent: SELECT AVG(pm25) FROM aq WHERE station = 'O'Brien Road'
+  concatenation -> ERROR OperationalError: near "Brien": syntax error
+  ? placeholder -> 70.0
+
+Input: "Adyar' OR '1'='1"
+   SQL sent: SELECT AVG(pm25) FROM aq WHERE station = 'Adyar' OR '1'='1'
+  concatenation -> 83.25
+  ? placeholder -> None
+
+Input: "x'; DROP TABLE aq; --"
+   SQL sent: SELECT AVG(pm25) FROM aq WHERE station = 'x'; DROP TABLE aq; --'
+  concatenation -> ERROR ProgrammingError: You can only execute one statement at a time.
+  ? placeholder -> None
+
+Table still exists? 4 rows
+(sqlite3.execute() refuses to run two statements in one call, so DROP TABLE could not run here, but other databases / executescript() do allow stacked queries.)

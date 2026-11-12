@@ -1,0 +1,21 @@
+
+### missing_column.csv
+  -> rejected with ValueError: missing column(s): ['no2']
+
+### semicolon.csv
+  -> OK, rows kept: 2 | first row: ('Adyar', '2026-10-01', 0, 48.0, 90.0, 30.0, 28.5, 0)
+
+### tab.csv
+  -> OK, rows kept: 2 | first row: ('Adyar', '2026-10-01', 0, 48.0, 90.0, 30.0, 28.5, 0)
+
+### latin1.csv
+  -> OK, rows kept: 2 | first row: ('Pérungudi', '2026-10-01', 0, 48.0, 90.0, 30.0, 28.5, 0)
+
+### utf16.csv
+  -> rejected with ValueError: missing column(s): ['station', 'date', 'hour', 'pm25', 'pm10', 'no2', 'temperature']
+
+### empty.csv
+  -> rejected with ValueError: empty file
+
+### header_only.csv
+  -> OK, rows kept: 0 | first row: None

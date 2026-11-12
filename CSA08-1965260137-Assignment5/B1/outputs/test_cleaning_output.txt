@@ -1,0 +1,39 @@
+=== BEFORE CLEANING (raw file) ===
+station,date,hour,pm25,pm10,no2,temperature
+Adyar,2026-10-01,0,48,90,30,28.5
+Adyar,2026-10-01,1,NA,95,32,28.1
+Adyar,2026-10-01,2,,97,31,27.9
+Adyar,2026-10-01,3,52,99,33,27.7
+Adyar,2026-10-01,3,52,99,33,27.7
+Adyar,2026-10-01,4,-5,101,34,27.5
+Adyar,2026-10-01,5,1500,abc,35,27.4
+Guindy,2026-10-01,0,95,160,55,28.0
+Guindy,01/10/2026,1,98,165,57,27.8
+  guindy ,2026-10-01,2,101,170,58,27.6
+Velachery,2026-10-01,0,60,110,40,84.2
+Velachery,2026-10-01,1,62,112,41,83.3
+Velachery,2026-10-01,2,63,115,42,NA
+Manali,2026-10-01,0,70,130,45,400
+Adyar,2026-13-45,6,50,90,30,28.0
+Adyar,2026-10-01,25,50,90,30,28.0
+
+INFO cleaning report: {'rows_read': 16, 'rejected_row': 2, 'duplicates': 1, 'missing': 4, 'impossible': 3, 'f_to_c': 3, 'filled': 6, 'still_null': 1, 'kept': 13}
+=== AFTER CLEANING ===
+station   date        hr  pm25   pm10  no2  temp_c filled
+Adyar     2026-10-01   0   48.0   90.0   30.0   28.5    0
+Adyar     2026-10-01   1   48.0   95.0   32.0   28.1    1
+Adyar     2026-10-01   2   48.0   97.0   31.0   27.9    1
+Adyar     2026-10-01   3   52.0   99.0   33.0   27.7    0
+Adyar     2026-10-01   4   52.0  101.0   34.0   27.5    1
+Adyar     2026-10-01   5   52.0  101.0   35.0   27.4    2
+Guindy    2026-10-01   0   95.0  160.0   55.0   28.0    0
+Guindy    2026-10-01   1   98.0  165.0   57.0   27.8    0
+Guindy    2026-10-01   2  101.0  170.0   58.0   27.6    0
+Manali    2026-10-01   0   70.0  130.0   45.0   NULL    0
+Velachery 2026-10-01   0   60.0  110.0   40.0   29.0    0
+Velachery 2026-10-01   1   62.0  112.0   41.0   28.5    0
+Velachery 2026-10-01   2   63.0  115.0   42.0   28.5    1
+
+Report: {'rows_read': 16, 'rejected_row': 2, 'duplicates': 1, 'missing': 4, 'impossible': 3, 'f_to_c': 3, 'filled': 6, 'still_null': 1, 'kept': 13}
+
+All assertions passed.

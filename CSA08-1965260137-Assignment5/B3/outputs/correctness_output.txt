@@ -1,0 +1,7 @@
+groups (station, day): 21 21 21 21
+largest difference between methods: 2.84e-14
+('S000', '2026-01-01') loops=53.8083  pandas=53.8083  sql=53.8083  running-sum=53.8083
+('S000', '2026-01-02') loops=56.2000  pandas=56.2000  sql=56.2000  running-sum=56.2000
+('S000', '2026-01-03') loops=59.1042  pandas=59.1042  sql=59.1042  running-sum=59.1042
+('S000', '2026-01-04') loops=58.6000  pandas=58.6000  sql=58.6000  running-sum=58.6000
+All methods agree.

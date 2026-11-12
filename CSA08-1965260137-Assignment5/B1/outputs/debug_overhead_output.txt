@@ -1,0 +1,5 @@
+200,000 debug messages
+  empty loop (baseline)            : 0.0025 s
+  print() to file                  : 0.1961 s
+  logging.debug, level DEBUG (on)  : 1.6445 s
+  logging.debug, level INFO (off)  : 0.0192 s

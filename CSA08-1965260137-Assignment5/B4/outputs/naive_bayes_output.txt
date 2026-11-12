@@ -1,0 +1,4 @@
+Leave-one-out accuracy, Naive Bayes (59 training complaints each time): 50/60 = 83.3%
+Lexicon scorer (no training)                                          : 53/60 = 88.3%
+NB prediction time: 23.3 us per complaint
+NB model size: vocabulary 459 words x 3 classes (~10.8 KB of counts)

@@ -1,0 +1,14 @@
+rows: 322,560  loaded (no index) in 0.21 s
+
+avg of one station, one day
+  plan before: SCAN aq
+  plan after : SEARCH aq USING INDEX idx_station_day (station=? AND day=?)
+  no index    9.936 ms/query | with index    0.019 ms/query | speed-up  532.8x
+
+daily summary of one station
+  plan before: SCAN aq
+  plan after : SEARCH aq USING INDEX idx_station_day (station=?)
+  no index   12.522 ms/query | with index    0.639 ms/query | speed-up   19.6x
+
+index build time: 0.107 s
+insert of 10,000 rows WITH index: 0.013 s

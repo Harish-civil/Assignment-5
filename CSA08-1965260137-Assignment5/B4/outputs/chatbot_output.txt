@@ -1,0 +1,21 @@
+You: Hello 
+Bot: Hello! Ask me e.g. 'What is the PM2.5 in Adyar today?' 
+
+You: What is the PM2.5 in Adyar today? 
+Bot: The average PM2.5 in Adyar on 2026-10-31 was 58.6 ug/m3. 
+
+You: air in guindy 
+Bot: The average PM2.5 in Guindy on 2026-10-31 was 85.0 ug/m3. 
+
+You: Which station is worst? 
+Bot: The station with the highest mean PM2.5 is Ennore (113.5 ug/m3). 
+
+You: What is the PM2.5? 
+Bot: Which station? I know: Adyar, Alandur, Anna Nagar, Ennore, Guindy, Kodungaiyur, Manali, Perungudi, Royapuram, Sholinganallur, T Nagar, Velachery 
+
+You: Will it rain tomorrow? 
+Bot: Sorry, I did not understand. Try asking about PM2.5 at a station. 
+
+You: pm2.5 in Adyr today 
+Bot: Which station? I know: Adyar, Alandur, Anna Nagar, Ennore, Guindy, Kodungaiyur, Manali, Perungudi, Royapuram, Sholinganallur, T Nagar, Velachery 
+

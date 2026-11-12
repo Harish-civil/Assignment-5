@@ -1,0 +1,8 @@
+positive | Roads are clean and the bus was fast.
+negative | Smoke from the factory, air is bad.
+negative | The staff were not helpful.
+positive | Not bad, service improved.
+
+--- A wrongly labelled complaint ---
+positive | The air is not very good.   (human reading: negative)
+Why: the negator 'not' is not the word immediately before 'good' ('very' is), so the sign is not flipped and 'good' is counted as +1. The scorer only looks one word back.

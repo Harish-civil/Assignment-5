@@ -1,0 +1,29 @@
+Loaded 8928 cleaned rows with ONE executemany in 23.0 ms
+Cleaning totals over 12 files: {'rows_read': 8949, 'rejected_row': 0, 'duplicates': 21, 'missing': 682, 'impossible': 443, 'f_to_c': 1459, 'filled': 1124, 'still_null': 1, 'kept': 8928}
+
+--- Q1: average PM2.5 of Adyar in October 2026 ---
+62.89
+
+--- Q2: stations ranked by October mean PM2.5 ---
+Ennore           113.51     744
+Kodungaiyur      106.98     744
+Manali           102.55     744
+Royapuram         95.07     744
+Guindy            89.95     744
+T Nagar           81.19     744
+Velachery         78.58     743
+Perungudi         72.15     744
+Alandur           68.92     744
+Adyar             62.89     744
+Anna Nagar        58.99     744
+Sholinganallur    56.18     744
+
+--- Q3: the five hours of the day with the worst air (all stations) ---
+hour 20:00  93.93
+hour 21:00  91.44
+hour 19:00  91.08
+hour  8:00  90.14
+hour  7:00  87.43
+
+Q1 via pandas on raw CSV (no forward fill): 62.91  (10.78 ms)
+Q1 via SQL on cleaned table              : 0.19 ms

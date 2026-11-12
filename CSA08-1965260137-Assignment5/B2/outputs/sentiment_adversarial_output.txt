@@ -1,0 +1,14 @@
+sarcasm              score   0  scorer=neutral  human=negative FAIL | Oh great, the factory is burning plastic again.
+sarcasm              score   0  scorer=neutral  human=negative FAIL | Wonderful, another dirty day. Thanks a lot.
+sarcasm              score   1  scorer=positive human=negative FAIL | Yeah right, the air is really clean today.
+double negative      score  -1  scorer=negative human=positive FAIL | I cannot say it is not good.
+double negative      score  -1  scorer=negative human=positive FAIL | It is not that the service is not helpful.
+double negative      score   1  scorer=positive human=negative FAIL | Never again will I say the air is not bad.
+mixed opinion        score   0  scorer=neutral  human=negative FAIL | The staff were polite but the air is still terrible.
+mixed opinion        score   0  scorer=neutral  human=neutral  OK  | Good app, bad data, slow support, clean design.
+mixed opinion        score   0  scorer=neutral  human=neutral  OK  | Air is cleaner now but smoke returns at night.
+distance of negator  score   1  scorer=positive human=negative FAIL | The air is not very good.
+unknown words        score   0  scorer=neutral  human=negative FAIL | The stench is unbearable and I feel nauseous.
+spelling / slang     score   0  scorer=neutral  human=negative FAIL | Aiir is baad, super smokey!!
+
+Correct on adversarial set: 2/12
